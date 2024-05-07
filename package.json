@@ -1,8 +1,12 @@
 {
 	"name": "tw-presets",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Some Preset TailwindCSS classes, that are not available by default bt TW",
 	"main": "index.js",
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
 	"scripts": {
 		"lint": "eslint .",
 		"lint:fix": "eslint . --fix",
@@ -10,7 +14,8 @@
 		"test": "jest",
 		"test:watch": "jest --watch",
 		"release": "standard-version",
-		"postrelease": "git push --follow-tags origin main && npm publish"
+		"postrelease": "git push --follow-tags origin main && npm publish",
+		"prepare": "husky install"
 	},
 	"husky": {
 		"hooks": {
@@ -27,7 +32,10 @@
 	"homepage": "https://github.com/iamshour/tw-presets#readme",
 	"keywords": [
 		"tailwind-css-plugin",
+		"tailwind",
 		"tailwindcss",
+		"css",
+		"postcss",
 		"plugin"
 	],
 	"author": "Ali Shour",
